@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int i,x,y,res=1;
+    printf("enter base:");
+    scanf("%d",&x);
+    printf("enter exponent:");
+    scanf("%d",&y);
+    if(x<1 || y<0)
+    res=0;
+    else
+      {
+        for(i=1;i<=y;i++)
+        res=res*x;
+    }
+    printf("result is:%d",res);
+    return 0;
+}
