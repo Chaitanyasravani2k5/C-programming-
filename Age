@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+int main() {
+
+    int age;
+
+    int babyCount = 0;
+
+    int schoolCount = 0;
+
+    int adultCount = 0;
+
+    int count = 1;
+
+    
+
+    while (count <= 20) {
+
+        printf("Enter age of person %d: ", count);
+
+        scanf("%d", &age);
+
+        
+
+        if (age <= 2) {
+
+            babyCount++;
+
+        } else if (age >= 3 && age <= 18) {
+
+            schoolCount++;
+
+        } else {
+
+            adultCount++;
+
+        }
+
+        
+
+        count++;
+
+    }
+
+    
+
+    printf("\nNumber of people falling into each category:\n");
+
+    printf("Baby age (0-2): %d\n", babyCount);
+
+    printf("School age (3-18): %d\n", schoolCount);
+
+    printf("Adult age (19 and above): %d\n", adultCount);
+
+    
+
+    return 0;
+
+}
+
